@@ -40,9 +40,9 @@ const Body: React.FC<BodyProps> = ({ cardItems }) => {
 
       {/* Products Section */}
       <div className='flex flex-wrap justify-center'>
-        {cardItems.map((item) => (
+        {cardItems.map((item, idx) => (
           <div
-            key={item.headerText}
+            key={item.headerText + '-' + idx}
             className='w-full md:w-1/2 flex justify-center'
           >
             <Card
