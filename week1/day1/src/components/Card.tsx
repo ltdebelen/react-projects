@@ -5,7 +5,12 @@ interface CardProps {
   imgSrc: string;
 }
 
-const Card = ({ headerText, subText, buttonText, imgSrc }: CardProps) => {
+const Card: React.FC<CardProps> = ({
+  headerText,
+  subText,
+  buttonText,
+  imgSrc,
+}) => {
   return (
     <div className='card flex flex-col justify-center items-center p-10 m-4 w-full'>
       {imgSrc && (
