@@ -1,8 +1,41 @@
 import heroImg from '../assets/hero-iphone.jpg';
+import airpodsImg from '../assets/airpods.jpg';
+import appleWatchImg from '../assets/apple-watch.jpg';
+import ipadImg from '../assets/ipad.jpg';
+import macbookImg from '../assets/macbook.jpg';
 import Card from './Card';
 import HeroCard from './HeroCard';
 
 const Body = () => {
+  // Card items data
+  const cardItems = [
+    {
+      headerText: 'AirPods',
+      subText: "The world's best in-ear Active Noise Cancellation.",
+      buttonText: 'Learn more',
+      imgSrc: airpodsImg,
+    },
+    {
+      headerText: 'Apple Watch',
+      subText: 'The ultimate way to watch your health.',
+      buttonText: 'Learn more',
+      imgSrc: appleWatchImg,
+    },
+    {
+      headerText: 'iPad',
+      subText:
+        'Now with the speed of the A16 chip and double the starting storage.',
+      buttonText: 'Learn more',
+      imgSrc: ipadImg,
+    },
+    {
+      headerText: 'MacBook',
+      subText: 'Sky blue color. Sky high performance with M4.',
+      buttonText: 'Learn more',
+      imgSrc: macbookImg,
+    },
+  ];
+
   return (
     <div className='flex justify-center items-center flex-col'>
       {/* Hero Section */}
@@ -28,13 +61,20 @@ const Body = () => {
       />
 
       {/* Products Section */}
-      {/* Loop Over Items */}
-      <div className=''>
-        <Card
-          headerText='Product 1'
-          subText="Find what they've been waiting for all year."
-          buttonText='Shop gifts'
-        />
+      <div className='flex flex-wrap justify-center'>
+        {cardItems.map((item) => (
+          <div
+            key={item.headerText}
+            className='w-full md:w-1/2 flex justify-center'
+          >
+            <Card
+              headerText={item.headerText}
+              subText={item.subText}
+              buttonText={item.buttonText}
+              imgSrc={item.imgSrc}
+            />
+          </div>
+        ))}
       </div>
     </div>
   );
