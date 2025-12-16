@@ -1,41 +1,19 @@
 import heroImg from '../assets/hero-iphone.jpg';
-import airpodsImg from '../assets/airpods.jpg';
-import appleWatchImg from '../assets/apple-watch.jpg';
-import ipadImg from '../assets/ipad.jpg';
-import macbookImg from '../assets/macbook.jpg';
 import Card from './Card';
 import HeroCard from './HeroCard';
 
-const Body = () => {
-  // Card items data
-  const cardItems = [
-    {
-      headerText: 'AirPods',
-      subText: "The world's best in-ear Active Noise Cancellation.",
-      buttonText: 'Learn more',
-      imgSrc: airpodsImg,
-    },
-    {
-      headerText: 'Apple Watch',
-      subText: 'The ultimate way to watch your health.',
-      buttonText: 'Learn more',
-      imgSrc: appleWatchImg,
-    },
-    {
-      headerText: 'iPad',
-      subText:
-        'Now with the speed of the A16 chip and double the starting storage.',
-      buttonText: 'Learn more',
-      imgSrc: ipadImg,
-    },
-    {
-      headerText: 'MacBook',
-      subText: 'Sky blue color. Sky high performance with M4.',
-      buttonText: 'Learn more',
-      imgSrc: macbookImg,
-    },
-  ];
+interface CardItem {
+  headerText: string;
+  subText: string;
+  buttonText: string;
+  imgSrc: string;
+}
 
+interface BodyProps {
+  cardItems: CardItem[];
+}
+
+const Body: React.FC<BodyProps> = ({ cardItems }) => {
   return (
     <div className='flex justify-center items-center flex-col'>
       {/* Hero Section */}
