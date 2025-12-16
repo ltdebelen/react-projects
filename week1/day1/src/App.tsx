@@ -8,7 +8,7 @@ import appleWatchImg from './assets/apple-watch.jpg';
 import ipadImg from './assets/ipad.jpg';
 import macbookImg from './assets/macbook.jpg';
 
-function App() {
+const App = () => {
   const links = [
     {
       name: 'Store',
@@ -61,6 +61,6 @@ function App() {
       <Footer />
     </>
   );
-}
+};
 
 export default App;
