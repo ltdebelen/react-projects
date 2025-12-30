@@ -14,7 +14,7 @@ const Card: React.FC<CardProps> = ({
   buttonHref,
 }) => {
   return (
-    <article className='card flex flex-col justify-center items-center p-10 m-4 w-full'>
+    <article className='card flex flex-col justify-center items-center p-10 m-2 w-full'>
       {imgSrc && (
         <img
           src={imgSrc}
