@@ -9,12 +9,14 @@ export const cardItems = [
     subText: "The world's best in-ear Active Noise Cancellation.",
     buttonText: 'Learn more',
     imgSrc: airpodsImg,
+    buttonHref: '#airpods',
   },
   {
     headerText: 'Apple Watch',
     subText: 'The ultimate way to watch your health.',
     buttonText: 'Learn more',
     imgSrc: appleWatchImg,
+    buttonHref: '#apple-watch',
   },
   {
     headerText: 'iPad',
@@ -22,12 +24,14 @@ export const cardItems = [
       'Now with the speed of the A16 chip and double the starting storage.',
     buttonText: 'Learn more',
     imgSrc: ipadImg,
+    buttonHref: '#ipad',
   },
   {
     headerText: 'MacBook',
     subText: 'Sky blue color. Sky high performance with M4.',
     buttonText: 'Learn more',
     imgSrc: macbookImg,
+    buttonHref: '#macbook',
   },
 ];
 

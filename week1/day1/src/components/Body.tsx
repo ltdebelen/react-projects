@@ -6,6 +6,7 @@ interface CardItem {
   headerText: string;
   subText: string;
   buttonText: string;
+  buttonHref?: string;
   imgSrc: string;
 }
 
@@ -15,7 +16,7 @@ interface BodyProps {
 
 const Body: React.FC<BodyProps> = ({ cardItems }) => {
   return (
-    <>
+    <div>
       <section
         className='flex items-center flex-col bg-cover bg-center w-full h-[700px]'
         style={{ backgroundImage: `url(${heroImg})` }}
@@ -50,14 +51,20 @@ const Body: React.FC<BodyProps> = ({ cardItems }) => {
       </section>
 
       {/* Hero Card */}
-      {/* <HeroCard
-        headerText='Give something special.'
-        subText="Find what they've been waiting for all year."
-        buttonText='Shop gifts'
-      /> */}
+      <section aria-label='Gift promotion'>
+        <HeroCard
+          headerText='Give something special.'
+          subText="Find what they've been waiting for all year."
+          buttonText='Shop gifts'
+          buttonHref='#'
+        />
+      </section>
 
       {/* Products Section */}
-      {/* <div className='flex flex-wrap justify-center'>
+      <section
+        aria-label='Product cards'
+        className='flex flex-wrap justify-center'
+      >
         {cardItems.map((item, idx) => (
           <div
             key={item.headerText + '-' + idx}
@@ -68,11 +75,12 @@ const Body: React.FC<BodyProps> = ({ cardItems }) => {
               subText={item.subText}
               buttonText={item.buttonText}
               imgSrc={item.imgSrc}
+              buttonHref={item.buttonHref}
             />
           </div>
         ))}
-      </div> */}
-    </>
+      </section>
+    </div>
   );
 };
 

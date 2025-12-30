@@ -2,16 +2,32 @@ interface HeroCardProps {
   headerText: string;
   subText: string;
   buttonText: string;
+  buttonHref?: string;
 }
 
-const HeroCard = ({ headerText, subText, buttonText }: HeroCardProps) => {
+const HeroCard = ({
+  headerText,
+  subText,
+  buttonText,
+  buttonHref,
+}: HeroCardProps) => {
   return (
-    <div className='card flex flex-col justify-center items-center p-10 m-4 w-full'>
+    <div className='card flex flex-col justify-center items-center p-10 my-4'>
       <h1 className='text-5xl font-semibold mt-4 mb-4'>{headerText}</h1>
       <p className='text-xl mb-4'>{subText}</p>
-      <button className='cursor-pointer rounded-4xl bg-blue-500 px-5 py-2.5 text-lg text-white'>
-        {buttonText}
-      </button>
+      {buttonHref ? (
+        <a
+          href={buttonHref}
+          className='cursor-pointer rounded-4xl bg-blue-500 px-5 py-2.5 text-lg text-white inline-block text-center'
+          role='button'
+        >
+          {buttonText}
+        </a>
+      ) : (
+        <button className='cursor-pointer rounded-4xl bg-blue-500 px-5 py-2.5 text-lg text-white'>
+          {buttonText}
+        </button>
+      )}
     </div>
   );
 };
