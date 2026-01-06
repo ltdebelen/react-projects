@@ -2,6 +2,7 @@ import './App.css';
 import { AdminsOnly } from './filtering/AdminsOnly';
 import { CaseInsensitive } from './filtering/CaseInsensitive';
 import { EmptyState } from './filtering/EmptyState';
+import { EvensOnly } from './filtering/EvensOnly';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <AdminsOnly />
         <CaseInsensitive />
         <EmptyState />
+        <EvensOnly />
       </div>
     </>
   );
