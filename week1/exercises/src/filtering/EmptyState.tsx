@@ -6,8 +6,6 @@ export const EmptyState = () => {
 
   const filteredItems = items.filter((item) => item === searchTerm);
 
-  console.log('filteredItems', filteredItems);
-
   return (
     <ProblemCard
       title='Filter 09 — Empty state handling'

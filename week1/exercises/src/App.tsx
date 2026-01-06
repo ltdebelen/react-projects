@@ -1,5 +1,6 @@
 import './App.css';
 import CompanyLogo from './components/CompanyLogo';
+import FooterComponent from './components/FooterComponent';
 import GreetingComponent from './components/GreetingComponent';
 import ProfileCard from './components/ProfileCard';
 import { AdminsOnly } from './filtering/AdminsOnly';
@@ -22,10 +23,14 @@ function App() {
         <GreetingComponent name='John Doe' />
         <ProfileCard
           name='John Doe'
-          profilePicUrl='https://example.com/profile.jpg'
+          profilePicUrl='https://picsum.photos/200/300'
           bio='Software developer and React enthusiast.'
         />
-        <CompanyLogo logoUrl='/logo.png' altText='Company Logo' />
+        <CompanyLogo
+          logoUrl='https://picsum.photos/50/50'
+          altText='Company Logo'
+        />
+        <FooterComponent year={2026} companyName='Tech Corp' />
       </div>
 
       <div className='min-h-screen bg-white flex flex-col items-center justify-center gap-4'>
