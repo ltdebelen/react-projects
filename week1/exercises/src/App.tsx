@@ -3,6 +3,7 @@ import { AdminsOnly } from './filtering/AdminsOnly';
 import { CaseInsensitive } from './filtering/CaseInsensitive';
 import { EmptyState } from './filtering/EmptyState';
 import { EvensOnly } from './filtering/EvensOnly';
+import { LongWordsOnly } from './filtering/LongWordsOnly';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <CaseInsensitive />
         <EmptyState />
         <EvensOnly />
+        <LongWordsOnly />
       </div>
     </>
   );
