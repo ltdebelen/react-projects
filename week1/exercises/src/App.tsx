@@ -1,4 +1,5 @@
 import './App.css';
+import GreetingComponent from './components/GreetingComponent';
 import { AdminsOnly } from './filtering/AdminsOnly';
 import { CaseInsensitive } from './filtering/CaseInsensitive';
 import { EmptyState } from './filtering/EmptyState';
@@ -12,6 +13,13 @@ import { SearchSimulation } from './filtering/SearchSimulation';
 function App() {
   return (
     <>
+      <div className='min-h-screen bg-white flex flex-col items-center justify-center gap-4'>
+        <h1 className='text-black text-3xl font-bold mb-6'>
+          Basic JSX Components - Homework
+        </h1>
+        <GreetingComponent name='John Doe' />
+      </div>
+
       <div className='min-h-screen bg-white flex flex-col items-center justify-center gap-4'>
         <h1 className='text-black text-3xl font-bold mb-6'>Filter Exercises</h1>
         <AdminsOnly />
