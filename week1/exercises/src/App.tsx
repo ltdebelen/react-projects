@@ -1,5 +1,6 @@
 import './App.css';
 import GreetingComponent from './components/GreetingComponent';
+import ProfileCard from './components/ProfileCard';
 import { AdminsOnly } from './filtering/AdminsOnly';
 import { CaseInsensitive } from './filtering/CaseInsensitive';
 import { EmptyState } from './filtering/EmptyState';
@@ -18,6 +19,11 @@ function App() {
           Basic JSX Components - Homework
         </h1>
         <GreetingComponent name='John Doe' />
+        <ProfileCard
+          name='John Doe'
+          profilePicUrl='https://example.com/profile.jpg'
+          bio='Software developer and React enthusiast.'
+        />
       </div>
 
       <div className='min-h-screen bg-white flex flex-col items-center justify-center gap-4'>
