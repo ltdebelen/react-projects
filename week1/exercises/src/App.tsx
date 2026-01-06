@@ -5,6 +5,7 @@ import { EmptyState } from './filtering/EmptyState';
 import { EvensOnly } from './filtering/EvensOnly';
 import { LongWordsOnly } from './filtering/LongWordsOnly';
 import { MultipleConditions } from './filtering/MultipleConditions';
+import { PreFilter } from './filtering/PreFilter';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <EvensOnly />
         <LongWordsOnly />
         <MultipleConditions />
+        <PreFilter />
       </div>
     </>
   );
