@@ -6,6 +6,7 @@ import { EvensOnly } from './filtering/EvensOnly';
 import { LongWordsOnly } from './filtering/LongWordsOnly';
 import { MultipleConditions } from './filtering/MultipleConditions';
 import { PreFilter } from './filtering/PreFilter';
+import { PriceGreaterThan20 } from './filtering/PriceGreaterThan20';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <LongWordsOnly />
         <MultipleConditions />
         <PreFilter />
+        <PriceGreaterThan20 />
       </div>
     </>
   );
