@@ -1,4 +1,5 @@
 import './App.css';
+import CompanyLogo from './components/CompanyLogo';
 import GreetingComponent from './components/GreetingComponent';
 import ProfileCard from './components/ProfileCard';
 import { AdminsOnly } from './filtering/AdminsOnly';
@@ -24,6 +25,7 @@ function App() {
           profilePicUrl='https://example.com/profile.jpg'
           bio='Software developer and React enthusiast.'
         />
+        <CompanyLogo logoUrl='/logo.png' altText='Company Logo' />
       </div>
 
       <div className='min-h-screen bg-white flex flex-col items-center justify-center gap-4'>
