@@ -20,7 +20,7 @@ export const AdminsOnly = () => {
       {users
         .filter((user) => user.isAdmin === true)
         .map((filteredUser) => (
-          <div>{filteredUser.name}</div>
+          <div key={filteredUser.id}>{filteredUser.name}</div>
         ))}
     </ProblemCard>
   );
