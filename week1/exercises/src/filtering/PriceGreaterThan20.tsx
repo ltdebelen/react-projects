@@ -16,7 +16,7 @@ export const PriceGreaterThan20 = () => {
       {products
         .filter((product) => product.price >= 20)
         .map((element) => (
-          <div>
+          <div key={element.id}>
             {element.name}, {element.price}
           </div>
         ))}

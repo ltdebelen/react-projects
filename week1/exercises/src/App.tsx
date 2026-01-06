@@ -7,6 +7,7 @@ import { LongWordsOnly } from './filtering/LongWordsOnly';
 import { MultipleConditions } from './filtering/MultipleConditions';
 import { PreFilter } from './filtering/PreFilter';
 import { PriceGreaterThan20 } from './filtering/PriceGreaterThan20';
+import { SearchSimulation } from './filtering/SearchSimulation';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <MultipleConditions />
         <PreFilter />
         <PriceGreaterThan20 />
+        <SearchSimulation searchTerm={'React'} />
       </div>
     </>
   );
