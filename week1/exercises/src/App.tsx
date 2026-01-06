@@ -4,6 +4,7 @@ import { CaseInsensitive } from './filtering/CaseInsensitive';
 import { EmptyState } from './filtering/EmptyState';
 import { EvensOnly } from './filtering/EvensOnly';
 import { LongWordsOnly } from './filtering/LongWordsOnly';
+import { MultipleConditions } from './filtering/MultipleConditions';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <EmptyState />
         <EvensOnly />
         <LongWordsOnly />
+        <MultipleConditions />
       </div>
     </>
   );
