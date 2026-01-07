@@ -27,6 +27,7 @@ import { CountOccurences } from './reduce/CountOccurences';
 import { GroupUsers } from './reduce/GroupUsers';
 import { LookUp } from './reduce/LookUp';
 import { Stats } from './reduce/Stats';
+import { SumNumbers } from './reduce/SumNumbers';
 
 function App() {
   return (
@@ -85,6 +86,7 @@ function App() {
         <GroupUsers />
         <LookUp />
         <Stats />
+        <SumNumbers />
       </div>
     </>
   );
