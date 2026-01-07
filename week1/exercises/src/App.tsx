@@ -1,5 +1,8 @@
+import { useState } from 'react';
+import { employees as initialEmployees } from './data/employees';
 import './App.css';
 import CompanyLogo from './components/CompanyLogo';
+import EmployeeDirectory from './components/EmployeeDirectory';
 import FooterComponent from './components/FooterComponent';
 import GreetingComponent from './components/GreetingComponent';
 import ProfileCard from './components/ProfileCard';
@@ -36,8 +39,37 @@ import { SumNumbers } from './reduce/SumNumbers';
 import { SumPrices } from './reduce/SumPrices';
 
 function App() {
+  const [employeeList, setEmployeeList] = useState(initialEmployees);
+
+  const filterEmployeeList = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const searchTerm = event.target.value.toLowerCase();
+
+    if (searchTerm.length > 0) {
+      const filteredEmployees = initialEmployees.filter((employee) =>
+        employee.name.toLowerCase().includes(searchTerm)
+      );
+      setEmployeeList(filteredEmployees);
+    } else {
+      setEmployeeList(initialEmployees);
+    }
+  };
+
   return (
     <>
+      <div className='min-h-screen bg-white flex flex-col items-center justify-center gap-4 m-10'>
+        <h1 className='text-black text-3xl font-bold mb-6'>
+          Project - Employee Directory
+        </h1>
+        <input
+          name='search'
+          type='text'
+          placeholder='Search employees...'
+          className='border border-gray-300 rounded px-4 py-2 mb-4'
+          onChange={filterEmployeeList}
+        />
+        <EmployeeDirectory employees={employeeList} />
+      </div>
+
       <div className='min-h-screen bg-white flex flex-col items-center justify-center gap-4'>
         <h1 className='text-black text-3xl font-bold mb-6'>
           Basic JSX Components - Homework
