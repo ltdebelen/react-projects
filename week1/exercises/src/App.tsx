@@ -24,6 +24,7 @@ import { RenderObjects } from './mapping/RenderObjects';
 import { CartTotal } from './reduce/CartTotal';
 import { CountItems } from './reduce/CountItems';
 import { CountOccurences } from './reduce/CountOccurences';
+import { GroupUsers } from './reduce/GroupUsers';
 
 function App() {
   return (
@@ -79,6 +80,7 @@ function App() {
         <CartTotal />
         <CountItems />
         <CountOccurences />
+        <GroupUsers />
       </div>
     </>
   );
