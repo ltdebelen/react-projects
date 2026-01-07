@@ -17,6 +17,7 @@ import { ConditionalRender } from './mapping/ConditionalRender';
 import { DoubleNumbers } from './mapping/DoubleNumbers';
 import { FormatPrices } from './mapping/FormatPrices';
 import { FruitList } from './mapping/FruitList';
+import { FullNames } from './mapping/FullNames';
 
 function App() {
   return (
@@ -60,6 +61,7 @@ function App() {
         <DoubleNumbers />
         <FormatPrices />
         <FruitList />
+        <FullNames />
       </div>
     </>
   );
