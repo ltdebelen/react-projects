@@ -22,6 +22,7 @@ import { RankedList } from './mapping/RankedList';
 import { RenderFromData } from './mapping/RenderFromData';
 import { RenderObjects } from './mapping/RenderObjects';
 import { CartTotal } from './reduce/CartTotal';
+import { CountItems } from './reduce/CountItems';
 
 function App() {
   return (
@@ -75,6 +76,7 @@ function App() {
       <div className='min-h-screen bg-white flex flex-col items-center justify-center gap-4'>
         <h1 className='text-black text-3xl font-bold mb-6'>Reduce Exercises</h1>
         <CartTotal />
+        <CountItems />
       </div>
     </>
   );
