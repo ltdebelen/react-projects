@@ -16,6 +16,7 @@ import { CapitalizeWords } from './mapping';
 import { ConditionalRender } from './mapping/ConditionalRender';
 import { DoubleNumbers } from './mapping/DoubleNumbers';
 import { FormatPrices } from './mapping/FormatPrices';
+import { FruitList } from './mapping/FruitList';
 
 function App() {
   return (
@@ -58,6 +59,7 @@ function App() {
         <ConditionalRender />
         <DoubleNumbers />
         <FormatPrices />
+        <FruitList />
       </div>
     </>
   );
