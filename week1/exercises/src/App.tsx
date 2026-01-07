@@ -15,6 +15,7 @@ import { SearchSimulation } from './filtering/SearchSimulation';
 import { CapitalizeWords, RenderNumbers } from './mapping';
 import { ConditionalRender } from './mapping/ConditionalRender';
 import { DoubleNumbers } from './mapping/DoubleNumbers';
+import { FeatureList } from './mapping/FeatureList';
 import { FormatPrices } from './mapping/FormatPrices';
 import { FruitList } from './mapping/FruitList';
 import { FullNames } from './mapping/FullNames';
@@ -89,6 +90,7 @@ function App() {
         <TeamDirectory />
         <NavigationMenu />
         <ProductList />
+        <FeatureList />
       </div>
 
       <div className='min-h-screen bg-white flex flex-col items-center justify-center gap-4'>
