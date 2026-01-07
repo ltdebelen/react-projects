@@ -25,7 +25,7 @@ import { RenderObjects } from './mapping/RenderObjects';
 function App() {
   return (
     <>
-      {/* <div className='min-h-screen bg-white flex flex-col items-center justify-center gap-4'>
+      <div className='min-h-screen bg-white flex flex-col items-center justify-center gap-4'>
         <h1 className='text-black text-3xl font-bold mb-6'>
           Basic JSX Components - Homework
         </h1>
@@ -40,9 +40,9 @@ function App() {
           altText='Company Logo'
         />
         <FooterComponent year={2026} companyName='Tech Corp' />
-      </div> */}
+      </div>
 
-      {/* <div className='min-h-screen bg-white flex flex-col items-center justify-center gap-4'>
+      <div className='min-h-screen bg-white flex flex-col items-center justify-center gap-4'>
         <h1 className='text-black text-3xl font-bold mb-6'>Filter Exercises</h1>
         <AdminsOnly />
         <CaseInsensitive />
@@ -53,7 +53,7 @@ function App() {
         <PreFilter />
         <PriceGreaterThan20 />
         <SearchSimulation searchTerm={'React'} />
-      </div> */}
+      </div>
 
       <div className='min-h-screen bg-white flex flex-col items-center justify-center gap-4'>
         <h1 className='text-black text-3xl font-bold mb-6'>
