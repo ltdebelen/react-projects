@@ -22,6 +22,7 @@ import { ListRendering } from './mapping/ListRendering';
 import { RankedList } from './mapping/RankedList';
 import { RenderFromData } from './mapping/RenderFromData';
 import { RenderObjects } from './mapping/RenderObjects';
+import { TeamDirectory } from './mapping/TeamDirectory';
 import { CartTotal } from './reduce/CartTotal';
 import { CountItems } from './reduce/CountItems';
 import { CountOccurences } from './reduce/CountOccurences';
@@ -83,6 +84,7 @@ function App() {
       <div className='min-h-screen bg-white flex flex-col items-center justify-center gap-4'>
         <h1 className='text-black text-3xl font-bold mb-6'>Mapping Homework</h1>
         <ListRendering />
+        <TeamDirectory />
       </div>
 
       <div className='min-h-screen bg-white flex flex-col items-center justify-center gap-4'>
