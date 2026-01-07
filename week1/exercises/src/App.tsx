@@ -18,6 +18,7 @@ import { DoubleNumbers } from './mapping/DoubleNumbers';
 import { FormatPrices } from './mapping/FormatPrices';
 import { FruitList } from './mapping/FruitList';
 import { FullNames } from './mapping/FullNames';
+import { RankedList } from './mapping/RankedList';
 
 function App() {
   return (
@@ -62,6 +63,7 @@ function App() {
         <FormatPrices />
         <FruitList />
         <FullNames />
+        <RankedList />
       </div>
     </>
   );
