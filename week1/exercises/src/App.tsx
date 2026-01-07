@@ -15,6 +15,7 @@ import { SearchSimulation } from './filtering/SearchSimulation';
 import { CapitalizeWords } from './mapping';
 import { ConditionalRender } from './mapping/ConditionalRender';
 import { DoubleNumbers } from './mapping/DoubleNumbers';
+import { FormatPrices } from './mapping/FormatPrices';
 
 function App() {
   return (
@@ -56,6 +57,7 @@ function App() {
         <CapitalizeWords />
         <ConditionalRender />
         <DoubleNumbers />
+        <FormatPrices />
       </div>
     </>
   );
