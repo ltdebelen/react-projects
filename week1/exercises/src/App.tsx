@@ -25,6 +25,7 @@ import { CartTotal } from './reduce/CartTotal';
 import { CountItems } from './reduce/CountItems';
 import { CountOccurences } from './reduce/CountOccurences';
 import { GroupUsers } from './reduce/GroupUsers';
+import { LookUp } from './reduce/LookUp';
 
 function App() {
   return (
@@ -81,6 +82,7 @@ function App() {
         <CountItems />
         <CountOccurences />
         <GroupUsers />
+        <LookUp />
       </div>
     </>
   );

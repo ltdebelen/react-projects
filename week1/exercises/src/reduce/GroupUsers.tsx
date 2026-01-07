@@ -15,8 +15,6 @@ export const GroupUsers = () => {
     return acc;
   }, {} as Record<string, typeof users>);
 
-  console.log(grouped);
-
   return (
     <ProblemCard
       title='Reduce 06 — Group items'
