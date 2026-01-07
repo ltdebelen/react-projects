@@ -1,4 +1,3 @@
-import React from 'react';
 import ProblemCard from '../components/ProblemCard';
 
 export const LookUp = () => {
