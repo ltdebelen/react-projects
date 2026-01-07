@@ -23,6 +23,7 @@ import { RenderFromData } from './mapping/RenderFromData';
 import { RenderObjects } from './mapping/RenderObjects';
 import { CartTotal } from './reduce/CartTotal';
 import { CountItems } from './reduce/CountItems';
+import { CountOccurences } from './reduce/CountOccurences';
 
 function App() {
   return (
@@ -77,6 +78,7 @@ function App() {
         <h1 className='text-black text-3xl font-bold mb-6'>Reduce Exercises</h1>
         <CartTotal />
         <CountItems />
+        <CountOccurences />
       </div>
     </>
   );
