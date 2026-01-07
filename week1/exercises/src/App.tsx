@@ -19,6 +19,7 @@ import { FormatPrices } from './mapping/FormatPrices';
 import { FruitList } from './mapping/FruitList';
 import { FullNames } from './mapping/FullNames';
 import { RankedList } from './mapping/RankedList';
+import { RenderFromData } from './mapping/RenderFromData';
 
 function App() {
   return (
@@ -64,6 +65,7 @@ function App() {
         <FruitList />
         <FullNames />
         <RankedList />
+        <RenderFromData />
       </div>
     </>
   );
