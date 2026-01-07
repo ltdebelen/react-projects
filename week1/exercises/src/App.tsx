@@ -20,6 +20,7 @@ import { FruitList } from './mapping/FruitList';
 import { FullNames } from './mapping/FullNames';
 import { ListRendering } from './mapping/ListRendering';
 import { NavigationMenu } from './mapping/NavigationMenu';
+import { ProductList } from './mapping/ProductList';
 import { RankedList } from './mapping/RankedList';
 import { RenderFromData } from './mapping/RenderFromData';
 import { RenderObjects } from './mapping/RenderObjects';
@@ -87,6 +88,7 @@ function App() {
         <ListRendering />
         <TeamDirectory />
         <NavigationMenu />
+        <ProductList />
       </div>
 
       <div className='min-h-screen bg-white flex flex-col items-center justify-center gap-4'>
