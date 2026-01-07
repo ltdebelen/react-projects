@@ -13,6 +13,7 @@ import { PreFilter } from './filtering/PreFilter';
 import { PriceGreaterThan20 } from './filtering/PriceGreaterThan20';
 import { SearchSimulation } from './filtering/SearchSimulation';
 import { CapitalizeWords } from './mapping';
+import { ConditionalRender } from './mapping/ConditionalRender';
 
 function App() {
   return (
@@ -52,6 +53,7 @@ function App() {
           Mapping Exercises
         </h1>
         <CapitalizeWords />
+        <ConditionalRender />
       </div>
     </>
   );
