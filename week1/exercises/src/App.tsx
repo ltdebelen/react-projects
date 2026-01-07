@@ -20,6 +20,7 @@ import { FruitList } from './mapping/FruitList';
 import { FullNames } from './mapping/FullNames';
 import { RankedList } from './mapping/RankedList';
 import { RenderFromData } from './mapping/RenderFromData';
+import { RenderObjects } from './mapping/RenderObjects';
 
 function App() {
   return (
@@ -67,6 +68,7 @@ function App() {
         <RankedList />
         <RenderFromData />
         <RenderNumbers />
+        <RenderObjects />
       </div>
     </>
   );
