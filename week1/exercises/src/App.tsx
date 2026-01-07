@@ -18,6 +18,7 @@ import { DoubleNumbers } from './mapping/DoubleNumbers';
 import { FormatPrices } from './mapping/FormatPrices';
 import { FruitList } from './mapping/FruitList';
 import { FullNames } from './mapping/FullNames';
+import { ListRendering } from './mapping/ListRendering';
 import { RankedList } from './mapping/RankedList';
 import { RenderFromData } from './mapping/RenderFromData';
 import { RenderObjects } from './mapping/RenderObjects';
@@ -77,6 +78,11 @@ function App() {
         <RenderFromData />
         <RenderNumbers />
         <RenderObjects />
+      </div>
+
+      <div className='min-h-screen bg-white flex flex-col items-center justify-center gap-4'>
+        <h1 className='text-black text-3xl font-bold mb-6'>Mapping Homework</h1>
+        <ListRendering />
       </div>
 
       <div className='min-h-screen bg-white flex flex-col items-center justify-center gap-4'>
