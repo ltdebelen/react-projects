@@ -12,7 +12,9 @@ export const CapitalizeWords = () => {
     >
       <ul>
         {animals.map((animal) => (
-          <div>{animal.charAt(0).toUpperCase() + animal.slice(1)}</div>
+          <div key={animal}>
+            {animal.charAt(0).toUpperCase() + animal.slice(1)}
+          </div>
         ))}
       </ul>
     </ProblemCard>

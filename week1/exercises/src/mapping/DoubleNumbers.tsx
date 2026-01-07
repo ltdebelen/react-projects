@@ -15,7 +15,7 @@ export const DoubleNumbers = () => {
     >
       <ul>
         {nums.map((num) => (
-          <li>{num * 2}</li>
+          <li key={num}>{num * 2}</li>
         ))}
       </ul>
     </ProblemCard>
