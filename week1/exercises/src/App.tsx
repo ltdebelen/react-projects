@@ -14,6 +14,7 @@ import { PriceGreaterThan20 } from './filtering/PriceGreaterThan20';
 import { SearchSimulation } from './filtering/SearchSimulation';
 import { CapitalizeWords } from './mapping';
 import { ConditionalRender } from './mapping/ConditionalRender';
+import { DoubleNumbers } from './mapping/DoubleNumbers';
 
 function App() {
   return (
@@ -54,6 +55,7 @@ function App() {
         </h1>
         <CapitalizeWords />
         <ConditionalRender />
+        <DoubleNumbers />
       </div>
     </>
   );
