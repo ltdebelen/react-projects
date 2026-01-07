@@ -12,7 +12,7 @@ import { MultipleConditions } from './filtering/MultipleConditions';
 import { PreFilter } from './filtering/PreFilter';
 import { PriceGreaterThan20 } from './filtering/PriceGreaterThan20';
 import { SearchSimulation } from './filtering/SearchSimulation';
-import { CapitalizeWords } from './mapping';
+import { CapitalizeWords, RenderNumbers } from './mapping';
 import { ConditionalRender } from './mapping/ConditionalRender';
 import { DoubleNumbers } from './mapping/DoubleNumbers';
 import { FormatPrices } from './mapping/FormatPrices';
@@ -66,6 +66,7 @@ function App() {
         <FullNames />
         <RankedList />
         <RenderFromData />
+        <RenderNumbers />
       </div>
     </>
   );
